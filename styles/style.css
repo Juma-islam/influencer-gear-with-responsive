@@ -45,6 +45,17 @@ nav ul{
     display: flex;
     gap: 25px;
 }
+.mobile-menu{
+    display: none;
+}
+.mobile-menu-icon{
+    display: none;
+    font-size: 1.125rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+
+}
 /* banner styles */
 .banner{
     display: flex;
@@ -54,12 +65,15 @@ align-items: center;
 }
 .banner-content{
     max-width: 550px;
-
     width: 100%;
 }
 .banner-img{
     background-image: url("../images/Circle\ design.svg");
+    background-repeat: no-repeat;
+
+   
 }
+
 /* logo styles */
 .amazon{
      display: grid;
@@ -162,4 +176,65 @@ padding-bottom: 30px;
     font-size: .875;
     font-weight: 700;
     color: #D9DBE1;
+}
+
+
+/* responsive for mobile  */
+@media screen and (max-width:576px){
+    .banner,
+    .featured-products{
+        flex-direction: column-reverse;
+        
+    }
+  .banner-content,
+  .featured-products{
+text-align: center;
+margin: auto;
+  }
+  .banner-img img{
+    max-width: 257px ;
+    width: 100%;
+}
+.banner-img{
+    justify-items: center;
+    background-position: center;
+    margin: auto;
+}
+  .navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links{
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+
+  }
+  .navbar h4{
+    display: none;
+  }
+.mobile-menu{
+    display: block;
+}
+  .mobile-menu-icon{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+  }
+  .amazon{
+    grid-template-columns: repeat(4,1fr);
+  }
+  .card-container{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .card-heading{
+    margin: auto;
+    text-align: center;
+    max-width: 150px;
+  }
 }
