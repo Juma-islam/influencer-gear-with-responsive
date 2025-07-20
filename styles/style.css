@@ -19,12 +19,14 @@ body {
     padding: 30px 100px;
     margin: 0 auto;
 }
-.sub-title{
+
+.sub-title {
     font-size: 1rem;
     font-weight: 600;
     color: rgb(58, 58, 58);
 }
-.primary-btn{
+
+.primary-btn {
     color: white;
     background-color: rgb(224, 44, 109);
     font-weight: 700;
@@ -41,14 +43,17 @@ body {
     align-items: center;
 
 }
-nav ul{
+
+nav ul {
     display: flex;
     gap: 25px;
 }
-.mobile-menu{
+
+.mobile-menu {
     display: none;
 }
-.mobile-menu-icon{
+
+.mobile-menu-icon {
     display: none;
     font-size: 1.125rem;
     cursor: pointer;
@@ -56,42 +61,47 @@ nav ul{
     justify-content: space-between;
 
 }
+
 /* banner styles */
-.banner{
+.banner {
     display: flex;
-padding: 50px 0px;
-gap: 100px;
-align-items: center;
+    padding: 50px 0px;
+    gap: 100px;
+    align-items: center;
 }
-.banner-content{
+
+.banner-content {
     max-width: 550px;
     width: 100%;
 }
-.banner-img{
+
+.banner-img {
     background-image: url("../images/Circle\ design.svg");
     background-repeat: no-repeat;
 
-   
+
 }
 
 /* logo styles */
-.amazon{
-     display: grid;
-    grid-template-columns: repeat(7,1fr);
-    gap: 30px;
- max-width: 1000px;
- height: 100px;
- width: 100%; 
-align-items: center;
-padding-top: -30px ;
-}
-/* popular card styles */
-.card-container{
+.amazon {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(7, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+    padding-top: -30px;
+}
+
+/* popular card styles */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
-.card-heading{
+
+.card-heading {
     font-size: 1.5rem;
     color: rgb(58, 58, 58);
     font-weight: 600;
@@ -99,142 +109,175 @@ padding-top: -30px ;
     margin: auto;
     padding-top: 30px;
 }
-.box{
+
+.box {
     max-width: 330px;
     height: 440px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
-padding: 15px;
+    padding: 15px;
 }
-.box-heading{
+
+.box-heading {
     font-size: 1.70rem;
     font-weight: 500;
     color: rgb(24, 25, 31);
 }
-.price{
+
+.price {
     font-size: 1.5rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.87);
-     font-family: "Inter", sans-serif;
-     display: block;
+    font-family: "Inter", sans-serif;
+    display: block;
 }
-.star-icon{
+
+.star-icon {
     color: orange;
 }
-.pic-price{
-    font-size:.875rem ;
+
+.pic-price {
+    font-size: .875rem;
     color: #5E6366;
-      font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
 }
-.pic-title{
-     font-family: "Inter", sans-serif;
-     color: #787885;
-     font-size:.875rem ;
-     font-weight: 700;
+
+.pic-title {
+    font-family: "Inter", sans-serif;
+    color: #787885;
+    font-size: .875rem;
+    font-weight: 700;
 }
-.icon-prize{
+
+.icon-prize {
     display: flex;
     gap: 8px;
     align-items: center;
 }
-.btn2{
- color: rgb(224, 44, 109);
- background-color: white;
- display: flex;
- display: block;
- justify-content: right;
-text-align: right;
-border: none;
+
+.btn2 {
+    color: rgb(224, 44, 109);
+    background-color: white;
+    display: flex;
+    display: block;
+    justify-content: right;
+    text-align: right;
+    border: none;
 }
+
 /* featured styles */
-.featured-products{
+.featured-products {
     padding-top: 30px;
     display: flex;
     gap: 120px;
     align-items: center;
 }
 
-.btn{
+.btn {
     border-radius: 0px;
 }
+
 /* footer styles */
-.footer-section{
+.footer-section {
     background-color: black;
     text-align: center;
     margin: auto;
-padding-top: 30px;
-padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-.footer-title{
+
+.footer-title {
     color: white;
     font-weight: 700;
-    font-size: 1.25;
+    font-size: 1.25rem;
 
 }
-.footer-copy{
-    font-size: .875;
+
+.footer-copy {
+    font-size: .875rem;
     font-weight: 700;
     color: #D9DBE1;
 }
 
+.footer-icon {
+    color: white;
+}
+
 
 /* responsive for mobile  */
-@media screen and (max-width:576px){
+@media screen and (max-width:576px) {
+
     .banner,
-    .featured-products{
+    .featured-products {
         flex-direction: column-reverse;
-        
+
     }
-  .banner-content,
-  .featured-products{
-text-align: center;
-margin: auto;
-  }
-  .banner-img img{
-    max-width: 257px ;
-    width: 100%;
-}
-.banner-img{
-    justify-items: center;
-    background-position: center;
-    margin: auto;
-}
-  .navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .nav-links{
-    display: none;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    padding: 20px;
 
-  }
-  .navbar h4{
-    display: none;
-  }
-.mobile-menu{
-    display: block;
-}
-  .mobile-menu-icon{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    .banner-content,
+    .featured-products {
+        text-align: center;
+        margin: auto;
+        gap: 30px;
+    }
 
-  }
-  .amazon{
-    grid-template-columns: repeat(4,1fr);
-  }
-  .card-container{
-    grid-template-columns: repeat(1,1fr);
-  }
-  .card-heading{
-    margin: auto;
-    text-align: center;
-    max-width: 150px;
-  }
+    .container {
+        padding: 20px;
+    }
+
+    .banner-img img {
+        max-width: 257px;
+        width: 100%;
+    }
+
+    .banner-img {
+        justify-items: center;
+        background-position: center;
+        margin: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 20px;
+
+    }
+
+    .navbar h4 {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu-icon {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+    }
+
+    .amazon {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card-heading {
+        margin: auto;
+        text-align: center;
+        max-width: 150px;
+    }
 }
